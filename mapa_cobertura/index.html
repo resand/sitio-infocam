@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mapa de Cobertura</title>
+<link href="../css/fuentes.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body{
+	padding:0; 
+	margin:0;
+	}
+span{
+	font-family: "The Sans Bold-Plain";
+	font-size:20px;
+}
+	
+h2{ width:100%; border-bottom:1px solid #999;
+font-family: "The Sans SemiBold-Plain";
+text-align:center;}	
+
+h1, h3{ font-family: "The Sans SemiBold-Plain";
+         padding:1px;
+		 margin:1px;}
+[type=text], [type=password]{
+	width:200px;
+	font-size:20px;
+}
+button{
+	font-family:"The Sans SemiLight-Plain";
+    font-size:20px;
+    border: 0;
+    padding: 8px 22px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+.naranja{background: #ffc33e;color: #87620a;}
+.naranja:hover {background: #ffd753;}
+</style>
+<script src="../js/jquery.js"></script>
+<script type="text/javascript">
+	 function entrar(){
+		var usuario = document.getElementById("usuario").value;
+		var pass = document.getElementById("pass").value;
+		
+		$.ajax({
+			type: "POST",
+			url: "login.php?usuario="+usuario+"&pass="+pass,
+			success: function(respuesta){
+				if($.trim(respuesta) != 'FALLO'){
+					aplicacion=window.open("mapas_cobertura.php", "_self");
+				}
+			}
+		 });
+		
+	 }
+</script>
+</head>
+
+<body>
+<table style="width:100%; border-collapse:collapse" border="0">
+	<tr>
+    	<td style="background:#CCC; width:20%; text-align:center"> <img src="/infocam/images/infocam.png" style="width:80px"/>         </td>
+		<td style="background:#CCC"> <h1>Cruzada Nacional contra el Hambre </h1> </td>
+	</tr>
+    <tr>
+        <td style="background:#000; height:5px;" colspan="2">       </td>
+    </tr>
+ 
+    <tr>
+        <td style="background:#900; height:5px;" colspan="2">    </td>
+     
+    </tr>
+ </table>  
+ <center>
+	<br>
+<table style="width:70%;text-align:center;" border="0">
+	<tr>
+    	<td>
+			<span>Usuario </span>
+			<br><input type="text" id="usuario" value="">
+		</td>
+	</tr>
+	<tr>
+        <td>
+			<span>Contrase&ntilde;a </span>
+			<br><input type="password" id="pass" value="">
+		</td>
+    </tr>
+	<tr>
+        <td>
+			<button class="naranja" onclick="entrar()"> Entrar </button>
+		</td>
+    </tr>
+</table>
+</center>
+</body>
+</html>

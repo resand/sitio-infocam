@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+  font-family: "The SaX LtIt";
+  src: url("fonts/TheSaXLtIt.ttf") format("truetype");}
+@font-face {
+  font-family: "The San ExtLigCapIta";
+  src: url("fonts/TheSaXLtCpIt.ttf") format("truetype");}
+@font-face {
+  font-family: "The Sans ExtraLight-Caps";
+  src: url("fonts/TheSaXLtCp.ttf") format("truetype");}
+@font-face {
+  font-family: "The Sans Bold-Plain";
+  src: url("fonts/TheSaBd.ttf") format("truetype");}
+@font-face {
+  font-family: "The Sans Light-CapsItalic";
+  src: url("fonts/TheSaLtCpIt.ttf") format("truetype");}
+@font-face {
+  font-family: "The Sans-Italic";
+  src: url("fonts/TheSaIt.ttf") format("truetype");}
+@font-face {
+  font-family: "The Sans SemiLight-Plain";
+  src: url("fonts/TheSaSLt.ttf") format("truetype");}
+@font-face {
+  font-family: "The Sans SemiBold-Plain";
+  src: url("fonts/TheSaSBd.ttf") format("truetype");}
+
+<!--[if IE]>
+	@font-face {
+	  font-family: "The SaX LtIt";
+	  src: url("fonts/TheSaXLtIt.eot") ;}
+	@font-face {
+	  font-family: "The San ExtLigCapIta";
+	  src: url("fonts/TheSaXLtCpIt.eot");}
+	@font-face {
+	  font-family: "The Sans ExtraLight-Caps";
+	  src: url("fonts/TheSaXLtCp.eot") ;	}
+	@font-face {
+	  font-family: "The Sans Bold-Plain";
+	  src: url("fonts/TheSaBd.eot") ;}
+	@font-face {
+	  font-family: "The Sans Light-CapsItalic";
+	  src: url("fonts/TheSaLtCpIt.eot") ;}
+	@font-face {
+	  font-family: "The Sans-Italic";
+	  src: url("fonts/TheSaIt.eot");}
+	@font-face {
+	  font-family: "The Sans SemiLight-Plain";
+	  src: url("fonts/TheSaSLt.eot") ;}
+	@font-face {
+	  font-family: "The Sans SemiBold-Plain";
+	  src: url("fonts/TheSaSBd.eot") ;}
+	@font-face {
+	  font-family: "The Sans SemiBold-Plain";
+	  src: url("fonts/TheSaSBd.eot");}
+<![endif]-->
+
+
+
+
+ 
